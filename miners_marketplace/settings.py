@@ -118,6 +118,8 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Path where static files will be collected
+
 
 
 # Default primary key field type
@@ -161,3 +163,5 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+ALLOWED_HOSTS = ['https://miners-marketplace-47oxhvixt-breezystonks69s-projects.vercel.app', '127.0.0.1']
