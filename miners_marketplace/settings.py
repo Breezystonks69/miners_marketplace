@@ -76,10 +76,7 @@ WSGI_APPLICATION = 'miners_marketplace.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(default=os.getenv('postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a/database_cwzp'))
 }
 
 
