@@ -77,15 +77,11 @@ WSGI_APPLICATION = 'miners_marketplace.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'database_cwzp',  # Your database name
-        'USER': 'database_cwzp_user',  # Your username
-        'PASSWORD': 'OwDnnckDy46oVLoYjJDtHJFQdyYEluQY',  # Your password
-        'HOST': 'dpg-cubup7rv2p9s73cvnu10-a',  # Your database hostname
-        'PORT': '5432',  # Default PostgreSQL port
-    }
+    'default': dj_database_url.config(
+        default='postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a.virginia-postgres.render.com:5432/database_cwzp'
+    )
 }
+
 
 
 # Password validation
