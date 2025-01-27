@@ -42,3 +42,21 @@ body {
 .navbar form {
     display: inline; /* Keeps it inline with other links */
 }
+
+nav {
+    margin-top: 40px; /* Adds space above the navigation bar */
+    padding: 20px 0; /* Adds vertical padding inside the bar */
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text color */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* Sets text to white */
+    padding: 10px 15px; /* Adds padding around each link */
+    display: inline-block; /* Ensures block layout for alignment */
+}
+
+nav a:hover {
+    color: #ccc; /* Optional hover effect */
+}
