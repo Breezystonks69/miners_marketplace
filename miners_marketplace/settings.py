@@ -78,10 +78,9 @@ WSGI_APPLICATION = 'miners_marketplace.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a.virginia-postgres.render.com:5432/database_cwzp'
+        default='postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a.virginia-postgres.render.com/database_cwzp'
     )
 }
-
 
 
 # Password validation
