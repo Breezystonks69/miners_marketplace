@@ -1,0 +1,62 @@
+/* Custom styles for the Bitcoin Miners Marketplace */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #343a40;
+    color: #fff;
+}
+
+/* Ensure buttons in the navbar look like links */
+.navbar .nav-link {
+    color: white; /* Matches other links */
+    text-decoration: none; /* No underline */
+    padding: 0; /* Consistent padding */
+    font-size: 16px; /* Adjust to match other links */
+    cursor: pointer; /* Ensures it's clickable */
+}
+
+.navbar .nav-link:hover {
+    color: #d4d4d4; /* Lighten color on hover */
+}
+
+/* Ensure forms inside the navbar don’t disrupt layout */
+.navbar form {
+    display: inline; /* Keeps it inline with other links */
+}
+
+nav {
+    margin-top: 40px; /* Adds space above the navigation bar */
+    padding: 20px 0; /* Adds vertical padding inside the bar */
+    background-color: #343a40; /* Dark background */
+    color: #fff; /* White text color */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline */
+    color: #fff; /* Sets text to white */
+    padding: 10px 15px; /* Adds padding around each link */
+    display: inline-block; /* Ensures block layout for alignment */
+}
+
+nav a:hover {
+    color: #ccc; /* Optional hover effect */
+}
