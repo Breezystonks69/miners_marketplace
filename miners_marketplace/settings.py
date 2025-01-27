@@ -77,9 +77,8 @@ WSGI_APPLICATION = 'miners_marketplace.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(default=os.getenv('postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a/database_cwzp'))
+    'default': dj_database_url.config(default='postgresql://database_cwzp_user:OwDnnckDy46oVLoYjJDtHJFQdyYEluQY@dpg-cubup7rv2p9s73cvnu10-a.virginia-postgres.render.com/database_cwzp')
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -125,13 +124,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Path where static files w
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
