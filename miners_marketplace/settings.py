@@ -26,8 +26,8 @@ SECRET_KEY = 'django-insecure-tn-t^i%)sn9))_9u_pv%ow0n=v(fi^%wj8ht2@jbs1d-q0r02a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 
+ALLOWED_HOSTS = ['miners-marketplace.onrender.com', '127.0.0.1']
 
 # Application definition
 
@@ -165,4 +165,3 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ALLOWED_HOSTS = ['https://miners-marketplace-47oxhvixt-breezystonks69s-projects.vercel.app', '127.0.0.1']
